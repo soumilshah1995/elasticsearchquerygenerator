@@ -1,8 +1,6 @@
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/soumilshah1995)
-
-
-
+----------------------------------------
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)]
+---------------------------
 
 
 # Elastic Search Query Generator  
@@ -28,6 +26,7 @@ pip install elasticsearchquerygenerator
 
 ```python
 from elasticsearchquerygenerator.elasticsearchquerygenerator import ElasticSearchQuery
+import json
 
 def main():
     helper = ElasticSearchQuery(size=100, BucketName="MyBuckets")
@@ -201,6 +200,7 @@ if __name__ == "__main__":
 
 ```python
 from elasticsearchquerygenerator.elasticsearchquerygenerator import ElasticSearchQuery
+import json
 
 def autocomplete():
     helper = ElasticSearchQuery(size=0, BucketName="MyBuckets")
@@ -218,6 +218,9 @@ if __name__ == "__main__":
 ## Authors
 
 ## Soumil Nitin Shah 
+
+* Excellent experience of building scalable and high-performance Software Applications combining distinctive skill sets in Internet of Things (IoT), Machine Learning and Full Stack Web Development in Python.
+
 Bachelor in Electronic Engineering |
 Masters in Electrical Engineering | 
 Master in Computer Engineering |
@@ -231,6 +234,7 @@ Master in Computer Engineering |
 * Email : shahsoumil519@gmail.com
 
 
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/soumilshah1995)
 
 ## License
 

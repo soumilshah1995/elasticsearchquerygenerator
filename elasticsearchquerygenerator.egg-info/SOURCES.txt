@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+elasticsearchquerygenerator/elasticsearchquerygenerator.py
+elasticsearchquerygenerator.egg-info/PKG-INFO
+elasticsearchquerygenerator.egg-info/SOURCES.txt
+elasticsearchquerygenerator.egg-info/dependency_links.txt
+elasticsearchquerygenerator.egg-info/top_level.txt
