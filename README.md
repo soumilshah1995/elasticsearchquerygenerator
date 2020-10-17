@@ -14,7 +14,35 @@
 * if you have any questions or suggestion please drop me an email at shahsoumil519@gmail.com
 
 
+* Learn More : https://www.youtube.com/watch?v=C-JKcMM6IXE&t=2548s
 
+## documentation :
+* UML Diagram 
+
+
+![Capture](https://user-images.githubusercontent.com/39345855/96332462-17e19100-1032-11eb-930e-8deb98f94675.JPG)
+
+*  Constructor: 
+    * Size: How Many Documents should the Query Return
+    * BucketName: is optional pass a name for Aggregation 
+    * Source: Basically what fields you want to return takes a List Argument source= [“f1”, “f2”, …..]
+    * Min_score: used for filtering large documents average threshold is set to 0.5
+  
+* Field:
+    * This is column or field you would like to search
+ 
+* Boost:
+    * If you want to Boost certain field pass a integer value 
+    
+
+* Operation
+    * There are four main operation you can pass 
+            * Should         ( OR Operation)
+            * Must 	      (AND operation)
+            * Filter           (FILTER Result )
+            * Must_not   (NOT Operation )
+ * Analyzer:  
+    * you can specify various analyzer such as stop etc 
 
 ## Installation
 
@@ -212,6 +240,41 @@ if __name__ == "__main__":
     main(autocomplete
 
 ```
+```json
+{
+   "_source": [],
+   "size": 0,
+   "min_score": 0.5,
+   "query": {
+      "bool": {
+         "must": [
+            {
+               "match_phrase_prefix": {
+                  "title": {
+                     "query": "n"
+                  }
+               }
+            }
+         ],
+         "filter": [],
+         "should": [],
+         "must_not": []
+      }
+   },
+   "aggs": {
+      "auto_complete": {
+         "terms": {
+            "field": "title",
+            "order": {
+               "_count": "desc"
+            },
+            "size": 25
+         }
+      }
+   }
+}
+```
+
 
 ##### i would be adding more examples and making it better and better 
 
