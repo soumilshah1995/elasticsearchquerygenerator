@@ -110,6 +110,7 @@ class ElasticSearchQuery(object):
         }
         }
         self.baseQuery["query"]["bool"][operation].append(_)
+        return self.baseQuery
 
     def add_aggreation(self, aggregate_name=None,
                        field=None,
