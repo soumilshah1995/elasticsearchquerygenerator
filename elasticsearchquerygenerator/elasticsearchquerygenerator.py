@@ -77,7 +77,7 @@ class ElasticSearchQuery(object):
         if analyzer is not None:
             _["match"][field]["analyzer"] = analyzer
 
-        self.baseQuery["query"]["bool"][operation].append(_)
+        #self.baseQuery["query"]["bool"][operation].append(_)
 
         return self.baseQuery
 
@@ -99,7 +99,7 @@ class ElasticSearchQuery(object):
         if analyzer is not None:
             _["match_phrase"][field]["analyzer"] = analyzer
 
-        self.baseQuery["query"]["bool"][operation].append(_)
+        #self.baseQuery["query"]["bool"][operation].append(_)
 
         return self.baseQuery
 
